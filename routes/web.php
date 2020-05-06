@@ -20,9 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/booking', 'HomeController@index')->name('booking');
 
 Route::resource('room', 'RoomController');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('booking', 'PageController@booking')->name('booking');
+
+Route::get('gallery', 'PageController@gallery')->name('gallery');
+
+Route::get('room', 'PageController@room')->name('room');
+
+Route::get('cuisine', 'PageController@cuisine')->name('cuisine');
+
+

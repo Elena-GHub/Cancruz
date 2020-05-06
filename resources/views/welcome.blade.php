@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+	
 <head>
 
-<title>Masia Kan Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+<title>Masia Can Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,24 +32,6 @@
 <!-- Body -->
 <body>
 	<div class="flex-center position-ref full-height">
-		@if (Route::has('login'))
-			<div class="top-right links">
-				@auth
-					<a href="{{ url('/home') }}">Home</a>
-				@else
-					<a href="{{ route('login') }}">Login</a>
-
-					@if (Route::has('register'))
-						<a href="{{ route('register') }}">Register</a>
-					@endif
-				@endauth
-			</div>
-		@endif
-
-		<div class="content">
-			<div class="title m-b-md">
-				Laravel
-			</div>
 
 	<!-- Header -->
 	<div class="header agileits w3layouts" id="home">
@@ -64,17 +47,26 @@
 						<span class="icon-bar aits"></span>
 						<span class="icon-bar w3laits"></span>
 					</button>
-					<a class="navbar-brand agileits w3layouts" href="welcome.blade.php">Masia Kan Cruz</a>
+					<a class="navbar-brand agileits w3layouts" href="welcome.blade.php">Masia Can Cruz</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
 					<ul class="nav agileits w3layouts navbar-nav">
-						<li class="active"><a href="index.html">HOME</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="cuisines.html">CUISINES</a></li>
-						<li><a href="gallery.html">GALLERY</a></li>
-						<li><a href="codes.html">CODES</a></li>
-						<li><a href="{{ route('booking') }}">Booking</a></li>
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="{{route ('room')}}">Habitaciones</a></li>
+						<li><a href="{{route ('gallery')}}">Galeria</a></li>
+						<li><a href="{{route ('booking')}}">Reservas</a></li>
+					@if (Route::has('login'))
+						@auth
+							<li><a href="{{ url('/home') }}">Home</a></li>
+						@else
+							<li><a href="{{ route('login') }}">Iniciar sesión</a></li>
+
+						@if (Route::has('register'))
+								<li><a href="{{ route('register') }}">Registrate</a></li>
+						@endif
+						@endauth
+					@endif
 					</ul>
 				</div>
 
@@ -92,7 +84,7 @@
 					<img src="images/masia_portada.jpg" alt="Agileits W3layouts">
 					<div class="layer agileits w3layouts"></div>
 					<div class="caption agileits w3layouts">
-						<h3>Bienvenido a <span>Masia Kan Cruz</span></h3>
+						<h3>Bienvenido a <span>Masia Can Cruz</span></h3>
 					</div>
 				</li>
 				<li>
@@ -182,11 +174,11 @@
 			</div>
 
 			<div class="col-md-4 col-sm-4 projects-grid agileits w3layouts projects-grid2 wow slideInRight">
-				<h1>Featured Resorts</h1>
-				<h4>BEST BEACH RESORTS</h4>
+				<h1>Proyecto y Reconstruccion</h1>
+				<h4>Recuperación de la Masía</h4>
 				<div class="h4-underline agileits w3layouts wow slideInLeft"></div>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a class="agileits w3layoutswow slideInLeft" href="gallery.html">Read More <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+				<p>El proyecto de recuperación de la Masía de Can Planes y su entorno se ha hecho con el antiguo principio de la masía, es decir, con la autogestión de los recursos propios y de los alrededores.</p>
+				<a class="agileits w3layoutswow slideInLeft" href="#">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
 			</div>
 			
 		</div>
@@ -399,54 +391,33 @@
 		<div class="container">
 
 			<div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
-				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp">
-					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts">5 Star Hotels</li>
-						<li class="agileits w3layouts">Beach Resorts</li>
-						<li class="agileits w3layouts">Beach Houses</li>
-						<li class="agileits w3layouts">Water Houses</li>
-					</ul>
-				</div>
-				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp">
-					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts"><a href="gallery.html">Bahamas</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Hawaii</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Miami</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Ibiza</a></li>
-					</ul>
-				</div>
 				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-3 wow fadeInUp">
 					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts"><a href="about.html">About</a></li>
-						<li class="agileits w3layouts"><a href="cuisines.html">Cuisines</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Gallery</a></li>
-						<li class="agileits w3layouts"><a href="booking.html">Contact</a></li>
+						<li class="agileits w3layouts"><a href="about.html">Nosotros</a></li>
+						<li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
+						<li class="agileits w3layouts"><a href="gallery.html">Proyecto</a></li>
+						<li class="agileits w3layouts"><a href="gallery.html">Comunidad</a></li>
+						<li class="agileits w3layouts"><a href="booking.html">Contacto</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 
 			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp">
-				<h4>Stay Connected</h4>
-				<p>Subscribe to our newsletter and get informed of our newest projects.</p>
+				<h4>Mantente Conectad@</h4>
+				<p>Suscríbete e infórmate sobre nuestros nuevos proyectos y ofertas.</p>
 				<form action="#" method="post">
 					<input type="text" placeholder="Email" name="Email" required="">
-					<input type="submit" value="SUBSCRIBE">
+					<input type="submit" value="SUBSCRIBETE">
 				</form>
 			</div>
 
 			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp">
 				<ul class="social-icons">
-					<li class="agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></li>
-					<li class="agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></li>
-					<li class="agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></li>
-					<li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></li>
-					<li class="agileits w3layouts"><a href="#" class="youtube agileits w3layouts" title="Go to Our Youtube Channel"></a></li>
+					<li class="agileits w3layouts"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcan-plans.com%2F&t=" class="facebook agileits w3layouts" title="Facebook"></a></li>
+					<li class="agileits w3layouts"><a href="https://twitter.com/intent/tweet?via=wordpressdotcom&url=https%3A%2F%2Fcan-plans.com%2F" class="twitter agileits w3layouts" title="Twiter"></a></li>
+					<li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Instagram"></a></li>
 				</ul>
-			</div>
-
-			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp">
-				<p>&copy; 2017 Tropical Resorts. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a></p>
 			</div>
 			<div class="clearfix"></div>
 

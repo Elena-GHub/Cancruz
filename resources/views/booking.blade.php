@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Head -->
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+	
 <head>
 
-<title>Tropical Resorts a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | Booking :: W3layouts</title>
+<title>Masia Can Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +13,8 @@
 <!-- //Meta-Tags -->
 
 <!-- Custom-Stylesheet-Links -->
-<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css"	type="text/css" media="all">
 <!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 		type="text/css" media="all">
-<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/jquery-ui.css" 	type="text/css" media="all">
 <!-- Animate.CSS --> 	<link rel="stylesheet" href="css/animate.css" 		type="text/css" media="all">
 <!-- //Custom-Stylesheet-Links -->
 
@@ -33,32 +31,42 @@
 
 <!-- Body -->
 <body>
+	<div class="flex-center position-ref full-height">
 
 	<!-- Header -->
 	<div class="header agileits w3layouts" id="home">
 
 		<!-- Navbar -->
-		<nav class="navbar navbar-default inner-pages-navbar agileits w3layouts wow bounceInUp">
+		<nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts">
 			<div class="container">
 
 				<div class="navbar-header agileits w3layouts">
 					<button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
 						<span class="sr-only agileits w3layouts">Toggle navigation</span>
-						<span class="icon-bar agileits w3layouts"></span>
-						<span class="icon-bar agileits w3layouts"></span>
-						<span class="icon-bar agileits w3layouts"></span>
+						<span class="icon-bar w3l"></span>
+						<span class="icon-bar aits"></span>
+						<span class="icon-bar w3laits"></span>
 					</button>
-					<a class="navbar-brand agileits w3layouts" href="index.html">Tropical Resorts</a>
+					<a class="navbar-brand agileits w3layouts" href="welcome.blade.php">Masia Can Cruz</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
-					<ul class="nav navbar-nav agileits w3layouts">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="cuisines.html">CUISINES</a></li>
-						<li><a href="gallery.html">GALLERY</a></li>
-						<li><a href="codes.html">CODES</a></li>
-						<li class="active"><a href="booking.html">BOOKING</a></li>
+					<ul class="nav agileits w3layouts navbar-nav">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="{{route ('room')}}">Habitaciones</a></li>
+						<li><a href="{{route ('gallery')}}">Galeria</a></li>
+						<li><a href="{{route ('booking')}}">Reservas</a></li>
+					@if (Route::has('login'))
+						@auth
+							<li><a href="{{ url('/home') }}">Home</a></li>
+						@else
+							<li><a href="{{ route('login') }}">Iniciar sesión</a></li>
+
+						@if (Route::has('register'))
+								<li><a href="{{ route('register') }}">Registrate</a></li>
+						@endif
+						@endauth
+					@endif
 					</ul>
 				</div>
 
@@ -473,3 +481,4 @@
 <!-- //Body -->
 
 </html>
+
