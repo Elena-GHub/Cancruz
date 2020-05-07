@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('admin')->default(false);
             $table->string('password');
-            $table->string('phone_number');
+            $table->string('phone_number')->default(555);
             $table->string('address_town')->nullable();
             $table->string('address_zipcode')->nullable();
             $table->string('address_details')->nullable();
