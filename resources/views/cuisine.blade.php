@@ -47,32 +47,21 @@
 						<span class="icon-bar aits"></span>
 						<span class="icon-bar w3laits"></span>
 					</button>
-					<a class="navbar-brand agileits w3layouts" href="welcome.blade.php">Masia Can Cruz</a>
+					<a class="navbar-brand agileits w3layouts" href="http://127.0.0.1:8000">Masia Can Cruz</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
 					<ul class="nav agileits w3layouts navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
 						<li><a href="{{route ('room')}}">Habitaciones</a></li>
 						<li><a href="{{route ('gallery')}}">Galeria</a></li>
 						<li><a href="{{route ('booking')}}">Reservas</a></li>
-					@if (Route::has('login'))
-						@auth
-							<li><a href="{{ url('/home') }}">Home</a></li>
-						@else
-							<li><a href="{{ route('login') }}">Iniciar sesión</a></li>
-
-						@if (Route::has('register'))
-								<li><a href="{{ route('register') }}">Registrate</a></li>
-						@endif
-						@endauth
-					@endif
 					</ul>
 				</div>
 
 			</div>
 		</nav>
 		<!-- //Navbar -->
+
 
 
 
@@ -585,8 +574,8 @@
 
 
 
-	<!-- Footer -->
-	<div class="footer agileits w3layouts">
+<!-- Footer -->
+<div class="footer agileits w3layouts">
 		<div class="container">
 
 			<div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
@@ -594,23 +583,15 @@
 					<ul class="agileits w3layouts">
 						<li class="agileits w3layouts"><a href="about.html">Nosotros</a></li>
 						<li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Proyecto</a></li>
-						<li class="agileits w3layouts"><a href="gallery.html">Comunidad</a></li>
-						<li class="agileits w3layouts"><a href="booking.html">Contacto</a></li>
+						<li class="agileits w3layouts"><a href="#">Proyecto</a></li>
+						<li class="agileits w3layouts"><a href="#">Comunidad</a></li>
+						<li class="agileits w3layouts"><a href="#">Contacto</a></li>
+						<li class="agileits w3layouts"><a href="{{ url('/home') }}">Administrador</a></li>
+
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
-
-			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp">
-				<h4>Mantente Conectad@</h4>
-				<p>Suscríbete e infórmate sobre nuestros nuevos proyectos y ofertas.</p>
-				<form action="#" method="post">
-					<input type="text" placeholder="Email" name="Email" required="">
-					<input type="submit" value="SUBSCRIBETE">
-				</form>
-			</div>
-
 			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp">
 				<ul class="social-icons">
 					<li class="agileits w3layouts"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcan-plans.com%2F&t=" class="facebook agileits w3layouts" title="Facebook"></a></li>
