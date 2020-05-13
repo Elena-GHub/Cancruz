@@ -23,12 +23,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('room', 'RoomController');
 
+Route::resource('client', 'ClientController');
+
 Route::get('booking', 'PageController@booking')->name('booking');
 
 Route::get('gallery', 'PageController@gallery')->name('gallery');
 
-Route::get('room', 'PageController@room')->name('room');
+Route::get('rooms', 'PageController@rooms')->name('rooms');
 
 Route::get('cuisine', 'PageController@cuisine')->name('cuisine');
 
-
+Route::resource('/admin/dashboard', 'PageController');

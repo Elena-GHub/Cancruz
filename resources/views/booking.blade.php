@@ -49,7 +49,7 @@
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
 					<ul class="nav agileits w3layouts navbar-nav">
-						<li><a href="{{route ('room')}}">Habitaciones</a></li>
+						<li><a href="{{route ('rooms')}}">Habitaciones</a></li>
 						<li><a href="{{route ('gallery')}}">Galeria</a></li>
 						<li><a href="{{route ('booking')}}">Reservas</a></li>
 					</ul>
