@@ -57,7 +57,7 @@
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
 					<ul class="nav navbar-nav agileits w3layouts">
                         <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="{{ route('about') }}">About</a></li>
+
                         <li><a href="{{ route('cuisines') }}">Cuisines</a></li>
                         <li><a href="{{ route('gallery') }}">Gallery</a></li>
                         <li><a href="{{ route('codes') }}">Codes</a></li>
