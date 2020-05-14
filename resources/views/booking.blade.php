@@ -109,7 +109,7 @@
                             <div class="dates agileits w3layouts">
                                 <h4>Nombre</h4>
                                 <div>
-                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="name" required="">
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="first_name" required="">
                                 </div>
                                 <h4>Apellidos</h4>
                                 <div>
@@ -121,21 +121,21 @@
                                 </div>
                                 <h4>Móvil</h4>
                                 <div>
-                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="movil"  required="">
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="phone_number"  required="">
                                 </div>
                                 <h4>Comentario</h4>
                                 <div>
-                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="commentary"   required="">
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="comments"   required="">
                                 </div>
 
                             </div>
                         </div>
 
                         <div class="members wow agileits w3layouts slideInLeft">
-                            <div class="adult agileits w3layouts">
-                                <h4>Adultos/as</h4>
+                            <div class="guests agileits w3layouts">
+                                <h4>Huéspedes</h4>
                                 <div class="dropdown-button agileits w3layouts">
-                                    <select class="dropdown agileits w3layouts" id="adults" name="adults" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
+                                    <select class="dropdown agileits w3layouts" id="guests" name="guests" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -145,25 +145,14 @@
                                 </div>
                             </div>
 
-                            <div class="child wow slideInLeft agileits w3layouts">
-                                <h4>Niños/as</h4>
-                                <div class="dropdown-button agileits w3layouts">
-                                    <select class="dropdown agileits w3layouts" id="childs"   name="childs" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-
-                                    </select>
-                                </div>
-                            </div>
                             <div class="clearfix"></div>
                         </div>
 
                         <div class="suite wow slideInLeft agileits w3layouts">
                             <div class="dropdown-button agileits w3layouts">
-                                <form action="Calendar.php ?>" method="post">
+
                                 <h4>Habitaciones</h4>
-                                <select class="dropdown agileits w3layouts" name="room" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
+                                <select class="dropdown agileits w3layouts" name="room_id" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
 
                                     <option value="1">Habitación Doble PUIGRACIÓS</option>
                                     <option value="2">Habitación Doble SANT CRISTÒFOL</option>
@@ -176,15 +165,15 @@
                             <h4>Seleccionar estancia</h4>
                             <div class="book-pag-frm1 agileits w3layouts wow slideInLeft">
                                 <label>Fecha de entrada</label>
-                                <input class="date agileits w3layouts" id="datepicker1" type="date" name="entry_date"  value="Entrada" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                <input class="date agileits w3layouts" id="datepicker1" type="date" name="check_in_date"  value="Entrada" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
                             </div>
                             <div class="book-pag-frm2 wow agileits w3layouts slideInLeft">
                                 <label>Fecha de salida</label>
-                                <input class="date agileits w3layouts" id="datepicker2" type="date" name="departure_date"  value="Salida" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                <input class="date agileits w3layouts" id="datepicker2" type="date" name="check_out_date"  value="Salida" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                                </form>
+
 
                         <div class="food wow agileits w3layouts slideInLeft">
                             <h4>Extras</h4>
@@ -214,7 +203,7 @@
                         <!--<a class="popup-with-zoom-anim agileits w3layouts" href="{{ url('/') }}">Reservar ahora</a>-->
                             <input type="submit" value="Reservar" class="popup-with-zoom-anim agileits w3layouts">
                         </div>
-                        <input type="submit">
+
                     </form>
 
 
