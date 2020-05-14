@@ -6,17 +6,32 @@ namespace App;
 
 class Calculator
 {
-    public function getMultiplicate($guestNumber, $nigthNumber, $petNumber, $breakfast)
+    public function getCalculate(int $guestNumber, int $nigthNumber, int $petNumber, bool $breakfast)
     {
-        $result = 114;
-        $totalPrice = 0;
+        $priceRoom = 0;
 
-        if ($nigthNumber = 1)
+        if($totalRoom=$nigthNumber)
         {
-            $totalPrice = 85;
+            $priceRoom = 85;
         }
 
-        return $result;
+
+        if($breakfast===true)
+        {
+            $breakfastPrice= $guestNumber *12* $nigthNumber;
+        }
+
+        if($breakfast===false)
+        {
+            $breakfastPrice= 0;
+        }
+
+
+        $petPrice= $petNumber * $nigthNumber * 5;
+
+        $totalPrice = ($totalRoom * $priceRoom) + $breakfastPrice + $petPrice;
+
+        return $totalPrice;
 
     }
 
