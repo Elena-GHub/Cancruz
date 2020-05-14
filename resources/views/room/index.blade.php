@@ -21,6 +21,10 @@
     .my-row:nth-child(even){
         background: lightgray;
     }
+    .my-card {
+        background-color: gray;
+        padding: 4px;
+    }
     
 </style>
 
