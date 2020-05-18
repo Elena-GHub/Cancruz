@@ -25,6 +25,9 @@
         padding: 4px;
         color: white;
     }
+    .my-secondItem {
+        margin-top: 2em;
+    }
     
 </style>
 
@@ -42,37 +45,42 @@
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Nombre:</label>
-                                <input type="text" name="first_name" class="form-control" value="{{$client->first_name}}" /><br>
-                                <label>Apellido(s):</label>
+                                <input type="text" name="first_name" class="form-control" value="{{$client->first_name}}" />
+                                <label class="my-secondItem">Apellido(s):</label>
                                 <input type="text" name="last_name" class="form-control" value="{{$client->last_name}}" />
                             </div>
                         </div>
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Correo electrónico:</label>
-                                <input type="text" name="email" class="form-control" value="{{$client->email}}" /><br>
-                                <label>Teléfono:</label>
+                                <input type="text" name="email" class="form-control" value="{{$client->email}}" />
+                                <label class="my-secondItem">Teléfono:</label>
                                 <input type="text" name="phone_number" class="form-control" value="{{$client->phone_number}}" />
                             </div>
                         </div>
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Habitación:</label>
-                                <input type="text" name="room_id" class="form-control" value="{{$client->room_id}}" /><br>
-                                <label>Comentarios:</label>
+                                    <select name="room_id" class="form-control" />
+                                    <optgroup label="actual: {{$client->room->room_name}}">
+                                        @foreach ($rooms as $room)
+                                        <option value="{{ $room['id'] }}">{{ $room['room_name'] }}</option>
+                                        @endforeach
+                                    </select>
+                                <label class="my-secondItem">Comentarios:</label>
                                 <input type="text" name="comments" class="form-control" value="{{$client->comments}}" />
+                            </div>
                             </div>
                         </div>
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Extras:</label>
-                                <div class="radio-btns agileits w3layouts">
-                                    <input type="checkbox" name="pet" value="1" <?php echo ($client->pet == 1) ? 'checked="checked"' : ''; ?>/>
+                                <div>
+                                    <input type="checkbox" name="pet" value="{{$client->pet}}" <?php if($client->pet == "Sí") echo "checked"; ?>/>
                                     <label class="w3-validate">Mascota</label>
-                                    <input type="checkbox" name="breakfast" value="1" <?php echo ($client->breakfast == 1) ? 'checked="checked"' : ''; ?>/>
+                                    <input type="checkbox" name="breakfast" value="{{$client->breakfast}}" <?php if($client->breakfast == "Sí") echo "checked"; ?>/>
                                     <label class="w3-validate">Desayuno</label>
                                 </div>
-
                                 
                             </div>
                         </div>                    

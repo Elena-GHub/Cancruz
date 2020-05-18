@@ -15,15 +15,22 @@
                         <input type="text" name="room_name" class="form-control" value="{{$room->room_name}}" />
                     </div>
                     <div class="card-header">
-                        <strong>Escriba el nuevo precio de la habitación</strong>
+                        <strong>Actualice los precios pertinentes</strong>
                     </div>
                     <div class="card-body form-group">
-                        <label>Nuevo precio</label>
-                        <input type="text" name="price" class="form-control" value="{{$room->price}}" />
-                    </div>                    
-                    
+                        <label>Precio de la habitación</label>
+                        <input type="text" name="room_price" class="form-control" value="{{$room->room_price}}" />
+                    </div> 
+                    <div class="card-body form-group">
+                        <label>Precio del desayuno por persona</label>
+                        <input type="text" name="breakfast_price" class="form-control" value="{{$room->breakfast_price}}" />
+                    </div>                   
+                    <div class="card-body form-group">
+                        <label>Precio por mascota</label>
+                        <input type="text" name="pet_price" class="form-control" value="{{$room->pet_price}}" />
+                    </div>
                     <div class="card-footer">
-                        <input type="submit" value="Update" class="btn btn-primary">
+                        <input type="submit" value="Actualizar" class="btn btn-primary">
                     </div>
                 </div>
             </form>

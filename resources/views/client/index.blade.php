@@ -34,7 +34,7 @@
             <div class="row my-rowheader">
                 <div class="col-2">Habitación</div>
                 <div class="col-2">Reservada por</div>
-                <div class="col-1">Nº huéspedes</div>
+                <div class="col-1">Núm. de huéspedes</div>
                 <div class="col-1">Mascota</div>
                 <div class="col-1">Desayuno</div>
                 <div class="col-1">Precio</div>
@@ -45,7 +45,7 @@
                 @foreach($clients as $client)
                 <div class="row my-row">
                 <div class="col-2">
-                    {{$client->room_id}} 
+                    {{$client->room->room_name}} 
                 </div>
                 <div class="col-2">
                     {{$client->first_name}} {{$client->last_name}}
@@ -53,10 +53,21 @@
                 <div class="col-1">
                     {{$client->guests}}
                 </div>
-
-
-
-
+                <div class="col-1">
+                    {{$client->pet}}
+                </div>
+                <div class="col-1">
+                    {{$client->breakfast}}
+                </div>
+                <div class="col-1">
+                    {{$client->total_price}}
+                </div>
+                <div class="col-1">
+                    {{$client->check_in_date}}
+                </div>
+                <div class="col-1">
+                    {{$client->check_out_date}}
+                </div>
                 <div class="col-1">
                     <form action="{{route('client.update',$client->id)}}" method="POST">
                         @csrf

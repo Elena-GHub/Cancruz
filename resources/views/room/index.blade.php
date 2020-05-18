@@ -21,6 +21,10 @@
     .my-row:nth-child(even){
         background: lightgray;
     }
+    .my-card {
+        background-color: gray;
+        padding: 4px;
+    }
     
 </style>
 
@@ -33,7 +37,9 @@
             </h2>
             <div class="row my-rowheader">
                 <div class="col-4">Nombre de la habitación</div>
-                <div class="col-2">Precio</div>
+                <div class="col-2">Precio habitación</div>
+                <div class="col-2">Precio desayuno</div>
+                <div class="col-2">Precio mascota</div>
                 <div class="col-2">Acción</div>
             </div>   
                 @foreach($rooms as $room)
@@ -42,9 +48,14 @@
                     {{$room->room_name}} 
                 </div>
                 <div class="col-2">
-                    {{$room->price}}
+                    {{$room->room_price}}
                 </div>
-
+                <div class="col-2">
+                    {{$room->breakfast_price}}
+                </div>
+                <div class="col-2">
+                    {{$room->pet_price}}
+                </div>
                 <div class="col-1">
                     <form action="{{route('room.update',$room->id)}}" method="POST">
                         @csrf

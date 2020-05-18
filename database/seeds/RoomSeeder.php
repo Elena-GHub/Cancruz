@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Room;
+use App\User;
 
 class RoomSeeder extends Seeder
 {
@@ -11,6 +13,9 @@ class RoomSeeder extends Seeder
      */
     public function run()
     {
-        //
+        foreach (Room::all() as $room {
+            $users = \App\User::inRandomOrder()->take(1)->pluck('id');
+            $room->users()->attach($users);
+        }
     }
 }
