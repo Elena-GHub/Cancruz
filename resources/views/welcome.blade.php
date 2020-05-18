@@ -53,9 +53,6 @@
 				<div class="slider-2 agileits w3layouts">
 					<ul class="rslides agileits w3layouts" id="slider2">
 						<li>
-							<img src="images/inicio/puerta1.jpg" alt="Puerta">
-						</li>
-						<li>
 							<img src="images/inicio/masia_portada5.jpg" alt="Foto de masia">
 						</li>
 					</ul>
@@ -99,9 +96,6 @@
 
 				<div class="slider-2 agileits w3layouts">
 					<ul class="rslides agileits w3layouts" id="slider2">
-						<li>
-							<img src="/images/cocina/img_20170812_1338251.jpg" alt="Plato de comida">
-						</li>
 						<li>
 							<img src="images/cocina/img_20160913_115154.jpg" alt="Foto huerta">
 						</li>
