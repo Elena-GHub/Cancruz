@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-	
+
 <head>
 
 <title>Masia Can Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
@@ -30,10 +30,10 @@
 <body>
 	<div class="flex-center position-ref full-height">
 
-	
+
 	<div class="header agileits w3layouts" id="home">
 
-		
+
 		<nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts">
 			<div class="container">
 
@@ -57,7 +57,7 @@
 
 			</div>
 		</nav>
-		
+
 
 
 
@@ -66,14 +66,14 @@
 			<img src="images/banner.jpg" alt="Agileits W3layouts">
 			<h1 class="wow agileits w3layouts fadeInDown">Reservas</h1>
 		</div>
-		
+
 
 	</div>
 
 
 
 
-	
+
 	<div class="location agileits w3layouts">
 		<div class="container">
 
@@ -83,17 +83,17 @@
 			</div>
 
 			<div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-2 wow slideInRight">
-				<img src="images/CanCruz-mapa-fake.png" alt="Mapa de acceso a carretera">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.127250641673!2d2.284077914961283!3d41.717772883411854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c5781a8b6bcb%3A0x6dd4d1b5896df742!2sMasia%20Can%20Plans!5e0!3m2!1ses!2ses!4v1589798451303!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 			<div class="clearfix"></div>
-			
+
 		</div>
 	</div>
-	
 
 
 
-	
+
+
 	<div class="reg agileits w3layouts" id="booking">
 		<div class="container">
 
@@ -133,7 +133,7 @@
 
 				<div class="suite wow slideInLeft agileits w3layouts">
 					<div class="dropdown-button agileits w3layouts">
-						<h4>Habitaciones</h4>           			
+						<h4>Habitaciones</h4>
 		    			<select class="dropdown agileits w3layouts" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
 							<option value="1"></option>
 							<option value="1">Adultos Hab.Doble</option>
@@ -143,7 +143,7 @@
 							<option value="3">9 - 18 años Hab. Doble</option>
 							<option value="4">9 - 18 cama aux.</option>
 							<option value="4">Hasta 8 años cama aux.</option>
-						
+
 						</select>
 					</div>
 				</div>
@@ -169,7 +169,7 @@
 									<input id="male" class="w3-radio" type="checkbox" name="gender" value="mascota">
 									<label class="w3-validate">Mascota</label>
 								</li>
-								
+
 							</ul>
 						</div>
 				</div>
@@ -195,10 +195,10 @@
 
 		</div>
 	</div>
-	
 
 
-	
+
+
 	<div class="footer agileits w3layouts">
 		<div class="container">
 
@@ -225,17 +225,17 @@
 
 		</div>
 	</div>
-	
+
 
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-	
+
 		<script src="js/wow.min.js"></script>
 				<script>
 					new WOW().init();
 				</script>
-		
+
 
 			<script src="js/responsiveslides.min.js"></script>
 			<script>
@@ -249,11 +249,11 @@
 					});
 				});
 			</script>
-	
+
 			<script type="text/javascript">
 				$(document).ready(function() {
 					var defaults = {
-						containerID: 'toTop', 
+						containerID: 'toTop',
 						containerHoverID: 'toTopHover',
 						scrollSpeed: 100,
 						easingType: 'linear'
@@ -262,7 +262,7 @@
 				});
 			</script>
 			<a href="#" id="toTop" class="agileits w3layouts" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
-		
+
 			<script type="text/javascript" src="js/move-top.js"></script>
 			<script type="text/javascript" src="js/easing.js"></script>
 			<script type="text/javascript">
