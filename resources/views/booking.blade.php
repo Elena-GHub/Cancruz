@@ -12,15 +12,13 @@
 		<div class="container">
 
 			<div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-1 wow slideInLeft">
-				<h3>Donde estamos</h3>
-				<p>Para venir a Can Planes de Bcn, Granollers etc., toma la C17 dirección Vic. <br>C-17 SALIDA GARRIGA NORTE Satis</p>
+				<h3>Como llegar</h3>
 			</div>
-
-			<div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-2 wow slideInRight">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.127250641673!2d2.284077914961283!3d41.717772883411854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c5781a8b6bcb%3A0x6dd4d1b5896df742!2sMasia%20Can%20Plans!5e0!3m2!1ses!2ses!4v1589798451303!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</div>
-			<div class="clearfix"></div>
-
+            <div class="map wow agileits w3layouts slideInUp" id="map">
+                <div class="map-hover agileits w3layouts">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.127250641673!2d2.284077914961283!3d41.717772883411854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c5781a8b6bcb%3A0x6dd4d1b5896df742!2sMasia%20Can%20Plans!5e0!3m2!1ses!2ses!4v1589798451303!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
 		</div>
 	</div>
 
