@@ -88,7 +88,7 @@
 				<h1>Alimentos</h1>
 				<h4>Cocina Ecologica</h4>
 				<div class="h4-underline agileits w3layouts wow slideInLeft"></div>
-				<p>Elaboramos las comidas con recetas sencillas y saludables, dando el mayor protagonismo a los sabores originales que nos dan los productos de excepcional calidad que disponemos: "una buena verdura", "un buen pan con tomate", "un buen arroz con verduras", "unas buenas legumbres", "unas buenas tostadas con mermelada para el desayuno", y "buenos vinos y corpinnat del Penedès".</p>
+				<p>Elaboramos las comidas con recetas sencillas y saludables......</p>
 				<a class="agileits w3layoutswow slideInLeft" href="{{route ('cuisine')}}">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
 			</div>
 
@@ -97,10 +97,10 @@
 				<div class="slider-2 agileits w3layouts">
 					<ul class="rslides agileits w3layouts" id="slider2">
 						<li>
-							<img src="images/cocina/img_20160913_115154.jpg" alt="Foto huerta">
+							<img src="images/cocina/huerto.jpg" alt="Foto cosecha">
 						</li>
 						<li>
-							<img src="images/cocina/img_20180920_121234.jpg" alt="Foto cosecha">
+							<img src="images/cocina/huerto_arado.jpg" alt="Foto huerto arado">
 						</li>
 
 					</ul>
@@ -109,14 +109,12 @@
 				<div class="slider-3 agileits w3layouts">
 					<ul class="rslides agileits w3layouts" id="slider3">
 						<li>
-							<img src="images/cocina/img_4480_lowres.jpg" alt="Foto vino sobre mesa">
+							<img src="images/cocina/vino_en_la_mesa.jpg" alt="Foto vino sobre mesa">
 						</li>
 						<li>
-							<img src="images/cocina/img_20170910_130651.jpg" alt="Foto cebollas y tomates">
+							<img src="images/cocina/tomates_y_cebollas_huerto.jpg" alt="Foto cebollas y tomates">
 						</li>
-						<li>
-							<img src="images/cocina/img_20160808_224834.jpg" alt="Foto plato">
-						</li>
+
 					</ul>
 				</div>
 
