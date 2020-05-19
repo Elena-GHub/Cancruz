@@ -35,40 +35,40 @@
 <div>
     <div class="container">
         <div class="card">
-            <form action="{{Route('client.update',$client->id)}}" method="POST">
+            <form action="{{Route('client.store')}}" method="POST">
                 @csrf
                 @method('put')
                     <div class="card-header col-12 bg-primary my-card">
-                        <strong>Actualice los campos pertinentes</strong>
+                        <strong>Rellene todos los campos</strong>
                     </div>
                     <div class="card-columns">
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Nombre:</label>
-                                <input type="text" name="first_name" class="form-control" value="{{$client->first_name}}" />
+                                <input type="text" name="first_name" class="form-control" />
                                 <label class="my-secondItem">Apellido(s):</label>
-                                <input type="text" name="last_name" class="form-control" value="{{$client->last_name}}" />
+                                <input type="text" name="last_name" class="form-control" />
                             </div>
                         </div>
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Correo electrónico:</label>
-                                <input type="text" name="email" class="form-control" value="{{$client->email}}" />
+                                <input type="text" name="email" class="form-control" />
                                 <label class="my-secondItem">Teléfono:</label>
-                                <input type="text" name="phone_number" class="form-control" value="{{$client->phone_number}}" />
+                                <input type="text" name="phone_number" class="form-control" />
                             </div>
                         </div>
                         <div class="card-body form-group">
                             <div class="card my-card bg-secondary">
                                 <label>Habitación:</label>
                                     <select name="room_id" class="form-control" />
-                                    <optgroup label="actual: {{$client->room->room_name}}">
+                                    <optgroup label="Seleccione una habitación">
                                         @foreach ($rooms as $room)
                                         <option value="{{ $room['id'] }}">{{ $room['room_name'] }}</option>
                                         @endforeach
                                     </select>
                                 <label class="my-secondItem">Comentarios:</label>
-                                <input type="text" name="comments" class="form-control" value="{{$client->comments}}" />
+                                <input type="text" name="comments" class="form-control" />
                             </div>
                             </div>
                         </div>
@@ -76,9 +76,9 @@
                             <div class="card my-card bg-secondary">
                                 <label>Extras:</label>
                                 <div>
-                                    <input type="checkbox" name="pet" value="{{$client->pet}}" <?php if($client->pet == "Sí") echo "checked"; ?>/>
+                                    <input type="checkbox" name="pet" />
                                     <label class="w3-validate">Mascota</label>
-                                    <input type="checkbox" name="breakfast" value="{{$client->breakfast}}" <?php if($client->breakfast == "Sí") echo "checked"; ?>/>
+                                    <input type="checkbox" name="breakfast" />
                                     <label class="w3-validate">Desayuno</label>
                                 </div>
                                 

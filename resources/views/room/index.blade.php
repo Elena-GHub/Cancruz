@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.adminnav')
 
 <style>
     body {
@@ -24,6 +24,10 @@
     .my-card {
         background-color: gray;
         padding: 4px;
+    }
+    .someSpace{
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
     
 </style>

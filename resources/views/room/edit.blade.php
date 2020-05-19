@@ -1,4 +1,32 @@
-@extends('layouts.app')
+@extends('admin.adminnav')
+
+<style>
+    body {
+        margin: 25%;
+    }
+    .my-container {
+        border: 2em;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .my-rowheader {
+        margin-bottom: 1em;
+        background-color: gray;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    .my-row {
+        padding: .3%;
+    }
+    .my-row:nth-child(even){
+        background: lightgray;
+    }
+    .my-card {
+        background-color: gray;
+        padding: 4px;
+    }
+    
+</style>
 
 @section('content')
 <div>
