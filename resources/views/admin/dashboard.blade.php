@@ -16,8 +16,9 @@
                 </div>
 
                     <div class="card-body">
-                        <a href="{{Route('client.index')}}" class="btn btn-primary">Administrar reservas</a>
-                        <a href="{{Route('room.index')}}" class="btn btn-primary">Administrar habitaciones</a>
+                        <a href="{{Route('booking.index')}}" class="btn btn-primary">Administrar reservas</a>
+                        <a href="{{Route('room.index')}}" class="btn btn-secondary">Administrar habitaciones</a>
+                       
                     </div>
                 </div>
             </div>

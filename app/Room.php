@@ -6,11 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    protected $protected = ['id'];
+    protected $fillable = ['room_name', 'price'];
     
-    /* public function Codersgroup()
-    {
-         return $this->belongsTo(Codersgroup::class);
-    }
-    */
+
 }

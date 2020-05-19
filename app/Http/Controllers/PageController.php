@@ -16,13 +16,18 @@ class PageController extends Controller
         return view('gallery');
     }
 
-    public function room()
+    public function rooms()
     {
-        return view('room');
+        return view('rooms');
     }
 
     public function cuisine()
     {
         return view('cuisine');
+    }
+    
+    public function dashboard()
+    {
+        return view('dashboard');
     }
 }

@@ -1,9 +1,14 @@
+@extends('layouts.app')
+@section('title','cuisines')
+@section('content')
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-	
+<html lang="en">
+
+<!-- Head -->
 <head>
 
-<title>Masia Can Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+<title>Tropical Resorts a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | Cuisines :: W3layouts</title>
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +18,10 @@
 <!-- //Meta-Tags -->
 
 <!-- Custom-Stylesheet-Links -->
-<!-- Bootstrap-CSS --> 	<link rel="stylesheet" href="css/bootstrap.min.css"	type="text/css" media="all">
-<!-- Index-Page-CSS --> <link rel="stylesheet" href="css/style.css" 		type="text/css" media="all">
-<!-- Animate.CSS --> 	<link rel="stylesheet" href="css/animate.css" 		type="text/css" media="all">
+<!-- Bootstrap-CSS --> 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+<!-- Index-Page-CSS --> 	<link rel="stylesheet" href="css/style.css" 		type="text/css" media="all">
+<!-- Gallery-Popup-CSS -->  <link rel="stylesheet" href="css/chocolat.css" 		type="text/css" media="all">
+<!-- Animate.CSS --> 		<link rel="stylesheet" href="css/animate.css" 		type="text/css" media="all">
 <!-- //Custom-Stylesheet-Links -->
 
 <!-- Fonts -->
@@ -31,38 +37,38 @@
 
 <!-- Body -->
 <body>
-	<div class="flex-center position-ref full-height">
 
 	<!-- Header -->
 	<div class="header agileits w3layouts" id="home">
 
 		<!-- Navbar -->
-		<nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts">
+		<nav class="navbar navbar-default agileits w3layouts inner-pages-navbar wow bounceInUp">
 			<div class="container">
 
 				<div class="navbar-header agileits w3layouts">
 					<button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
 						<span class="sr-only agileits w3layouts">Toggle navigation</span>
-						<span class="icon-bar w3l"></span>
-						<span class="icon-bar aits"></span>
-						<span class="icon-bar w3laits"></span>
+						<span class="icon-bar agileits w3layouts"></span>
+						<span class="icon-bar agileits w3layouts"></span>
+						<span class="icon-bar agileits w3layouts"></span>
 					</button>
-					<a class="navbar-brand agileits w3layouts" href="http://127.0.0.1:8000">Masia Can Cruz</a>
+					<a class="navbar-brand agileits w3layouts" href="{{ url('/') }}">Tropical Resorts</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
-					<ul class="nav agileits w3layouts navbar-nav">
-						<li><a href="{{route ('rooms')}}">Habitaciones</a></li>
-						<li><a href="{{route ('gallery')}}">Galeria</a></li>
-						<li><a href="{{route ('booking')}}">Reservas</a></li>
+					<ul class="nav navbar-nav agileits w3layouts">
+                        <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ route('about') }}">About</a></li>
+                        <li><a href="{{ route('cuisines') }}">Cuisines</a></li>
+                        <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                        <li><a href="{{ route('codes') }}">Codes</a></li>
+                        <li><a href="{{ route('booking') }}">Booking</a></li>
 					</ul>
 				</div>
 
 			</div>
 		</nav>
 		<!-- //Navbar -->
-
-
 
 
 		<!-- Banner -->
@@ -90,7 +96,7 @@
 				<img src="images/cuisines.jpg" alt="Agileits W3layouts">
 			</div>
 			<div class="clearfix"></div>
-			
+
 		</div>
 	</div>
 	<!-- //Cuisines -->
@@ -331,7 +337,7 @@
 									</div>
 								</div>
 								<div class="clearfix"></div>
-							</div> 
+							</div>
 						</div>
 					</li>
 					<li>
@@ -561,8 +567,8 @@
 									</div>
 								</div>
 								<div class="clearfix"></div>
-							</div>	
-						</div>	
+							</div>
+						</div>
 					</li>
 				</ul>
 				<div class="wow fadeInUp" id="loadMore">Load more <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
@@ -574,30 +580,59 @@
 
 
 
-<!-- Footer -->
-<div class="footer agileits w3layouts">
+	<!-- Footer -->
+	<div class="footer agileits w3layouts">
 		<div class="container">
 
 			<div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
-				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-3 wow fadeInUp">
+				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp">
 					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts"><a href="about.html">Nosotros</a></li>
-						<li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
-						<li class="agileits w3layouts"><a href="#">Proyecto</a></li>
-						<li class="agileits w3layouts"><a href="#">Comunidad</a></li>
-						<li class="agileits w3layouts"><a href="#">Contacto</a></li>
-						<li class="agileits w3layouts"><a href="{{ url('/home') }}">Administrador</a></li>
-
+						<li class="agileits w3layouts">5 Star Hotels</li>
+						<li class="agileits w3layouts">Beach Resorts</li>
+						<li class="agileits w3layouts">Beach Houses</li>
+						<li class="agileits w3layouts">Water Houses</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp">
+					<ul class="agileits w3layouts">
+						<li class="agileits w3layouts"><a href="gallery.blade.php">Bahamas</a></li>
+						<li class="agileits w3layouts"><a href="gallery.blade.php">Hawaii</a></li>
+						<li class="agileits w3layouts"><a href="gallery.blade.php">Miami</a></li>
+						<li class="agileits w3layouts"><a href="gallery.blade.php">Ibiza</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-2 wow fadeInUp">
+					<ul class="agileits w3layouts">
+						<li class="agileits w3layouts"><a href="index.html">Home</a></li>
+						<li class="agileits w3layouts"><a href="about.html">About</a></li>
+						<li class="agileits w3layouts"><a href="gallery.blade.php">Gallery</a></li>
+						<li class="agileits w3layouts"><a href="booking.html">Contact</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
+
+			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp">
+				<h4>Stay Connected</h4>
+				<p>Subscribe to our newsletter and get informed of our newest projects.</p>
+				<form action="#" method="post">
+					<input type="text" placeholder="Email" name="Email" required="">
+					<input type="submit" value="SUBSCRIBE">
+				</form>
+			</div>
+
 			<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp">
-				<ul class="social-icons">
-					<li class="agileits w3layouts"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcan-plans.com%2F&t=" class="facebook agileits w3layouts" title="Facebook"></a></li>
-					<li class="agileits w3layouts"><a href="https://twitter.com/intent/tweet?via=wordpressdotcom&url=https%3A%2F%2Fcan-plans.com%2F" class="twitter agileits w3layouts" title="Twiter"></a></li>
-					<li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Instagram"></a></li>
+				<ul class="social-icons agileits w3layouts">
+					<li class="agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></li>
+					<li class="agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></li>
+					<li class="agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></li>
+					<li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></li>
+					<li class="agileits w3layouts"><a href="#" class="youtube agileits w3layouts" title="Go to Our Youtube Channel"></a></li>
 				</ul>
+			</div>
+
+			<div class="col-md-6 col-sm-6 agileits w3layouts footer-grids copyright wow fadeInUp">
+				<p>&copy; 2017 Tropical Resorts. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a></p>
 			</div>
 			<div class="clearfix"></div>
 
@@ -607,7 +642,7 @@
 
 
 
-	<!-- Custom-JavaScript-File-Links -->
+	<!-- Necessary-JavaScript-Files-&-Links -->
 
 		<!-- Default-JavaScript -->	  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 		<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -619,20 +654,33 @@
 				</script>
 		<!-- //Animate.CSS-JavaScript -->
 
-		<!-- Slider-JavaScript -->
-			<script src="js/responsiveslides.min.js"></script>
+		<!-- Portfolio-Popup-Box-JavaScript -->
+			<script src="js/modernizr.custom.97074.js"></script>
+			<script src="js/jquery.chocolat.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.special-grid a').Chocolat();
+				});
+			</script>
+		<!-- //Portfolio-Popup-Box-JavaScript -->
+
+		<!-- Show-More-JavaScript-File -->
 			<script>
-				$(function () {
-					$("#slider1, #slider2, #slider3, #slider4").responsiveSlides({
-						auto: true,
-						nav: true,
-						speed: 1500,
-						namespace: "callbacks",
-						pager: true,
+				$(document).ready(function () {
+					size_li = $("#myList li").size();
+					x=1;
+					$('#myList li:lt('+x+')').show();
+					$('#loadMore').click(function () {
+						x= (x+1 <= size_li) ? x+1 : size_li;
+						$('#myList li:lt('+x+')').show();
+					});
+					$('#showLess').click(function () {
+						x=(x-1<0) ? 1 : x-1;
+						$('#myList li').not(':lt('+x+')').hide();
 					});
 				});
 			</script>
-		<!-- //Slider-JavaScript -->
+		<!-- Show-More-JavaScript-File -->
 
 		<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
 			<script type="text/javascript">
@@ -661,9 +709,12 @@
 			</script>
 		<!-- //Smooth-Scrolling-JavaScript -->
 
-    <!-- //Custom-JavaScript-File-Links -->
-    
+	<!-- //Necessary-JavaScript-Files-&-Links -->
+
+
+
 </body>
 <!-- //Body -->
 
 </html>
+@endsection

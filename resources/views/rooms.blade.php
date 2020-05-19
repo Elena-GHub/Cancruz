@@ -5,7 +5,7 @@
 		<!-- Banner -->
 		<div class="banner agileits w3layouts">
 			<img src="images/banner.jpg" alt="Agileits W3layouts">
-			<h1 class="wow agileits w3layouts fadeInDown">Galeria</h1>
+			<h1 class="wow agileits w3layouts fadeInDown">Habitaciones</h1>
 		</div>
 		<!-- //Banner -->
 
@@ -18,11 +18,11 @@
 	<div class="rooms agileits w3layouts">
 		<div class="container">
 
-			<h2>Nuestras Habitaciones</h2>
+			<h2>We Provide The Best Hospitality</h2>
 
 			<div class="rooms-grids agileits w3layouts">
 				<div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
-					<img src="images/room-1.jpg" alt="Agileits W3layouts">
+					<img src="images/habitaciones/(DÚPLEX)  DEL ROCACENTELLA/rocacentella-2.jpg" alt="Agileits W3layouts">
 					<h3>STAR HOTELS</h3>
 				</div>
 				<div class="rooms-grid rooms-grid-2 agileits w3layouts wow fadeInLeft">
@@ -186,5 +186,4 @@
 
 	</div>
 	<!-- //Portfolio -->
-
 @endsection

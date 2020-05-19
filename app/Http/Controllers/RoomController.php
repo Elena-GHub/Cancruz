@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Room;
+use App\Client;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -14,7 +15,8 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        $rooms = Room::all();
+        return view('room.index', ['rooms' => $rooms]);
     }
 
     /**
@@ -24,7 +26,8 @@ class RoomController extends Controller
      */
     public function create()
     {
-        //
+        $rooms = Room::all();
+        return view('room.create', compact('rooms'));
     }
 
     /**
@@ -35,7 +38,8 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Room::create($request->all());
+        return redirect(route('room.index'));
     }
 
     /**
@@ -46,7 +50,7 @@ class RoomController extends Controller
      */
     public function show(Room $room)
     {
-        //
+        return view('room.show', ['room' => $room]);
     }
 
     /**
@@ -57,7 +61,7 @@ class RoomController extends Controller
      */
     public function edit(Room $room)
     {
-        //
+        return view('room.edit', ['room' => $room]);
     }
 
     /**
@@ -69,7 +73,8 @@ class RoomController extends Controller
      */
     public function update(Request $request, Room $room)
     {
-        //
+        $room->update($request->all());
+        return redirect(route('room.index'));
     }
 
     /**
@@ -80,6 +85,7 @@ class RoomController extends Controller
      */
     public function destroy(Room $room)
     {
-        //
+        $room->delete();
+        return redirect(route('room.index'));
     }
 }
