@@ -13,9 +13,6 @@ class RoomSeeder extends Seeder
      */
     public function run()
     {
-        foreach (Room::all() as $room {
-            $users = \App\User::inRandomOrder()->take(1)->pluck('id');
-            $room->users()->attach($users);
-        }
+        //
     }
 }
