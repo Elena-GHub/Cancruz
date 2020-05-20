@@ -109,7 +109,7 @@
                     <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
                         <div class=" details-grid1 agileits w3layouts">
                             <div class="details-grid-image agileits w3layouts">
-                                <img src="images/cocina/pan_en_horno.jpg" alt="Foto pan en horno de barro">
+                                <img src="images/cocina/dibujo.jpg" alt="Foto pan en horno de barro">
                             </div>
                             <div class="details-grid-info agileits w3layouts">
                                 <p>Pan hecho en casa! en nuestra panaderia
@@ -122,47 +122,12 @@
                     <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
                         <div class=" details-grid1 agileits w3layouts">
                             <div class="details-grid-image agileits w3layouts">
-                                <img src="images/cocina/tortilla_berenjena_blanca.jpg" alt="Foto tortilla de berenjenas">
+                                <img src="images/cocina/plato_huevo_butifarra.jpg" alt="Foto tortilla de berenjenas">
                             </div>
                             <div class="details-grid-info agileits w3layouts">
-                                <p>Tortilla de berenjena blanca.</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="details-grids agileits w3layouts">
-                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
-                        <div class=" details-grid1 agileits w3layouts">
-                            <div class="details-grid-image agileits w3layouts">
-                                <img src="images/cocina/plato_huevo_butifarra.jpg" alt="Foto buritfarra y huevo">
-                            </div>
-                            <div class="details-grid-info agileits w3layouts">
-                                <p>Cena de Labrador, sencillo y saludable
-                                    Butifarra negra ecológica de Centelles, huevos de nuestro corral y verduras del huerto.</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
-                        <div class=" details-grid1 agileits w3layouts">
-                            <div class="details-grid-image agileits w3layouts">
-                                <img src="images/cocina/plato_huevo_butifarra.jpg" alt="Foto buritfarra y huevo">
-                            </div>
-                            <div class="details-grid-info agileits w3layouts">
-                                <p>Cena de Labrador, sencillo y saludable
-                                    Butifarra negra ecológica de Centelles, huevos de nuestro corral y verduras del huerto.</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
-                        <div class=" details-grid1 agileits w3layouts">
-                            <div class="details-grid-image agileits w3layouts">
-                                <img src="images/cocina/dibujo.jpg" alt="Foto tortilla">
-                            </div>
-                            <div class="details-grid-info agileits w3layouts">
-                                <p>Tortilla y pan para disfrutar en nuestro agradable entorno.</p>
+                                <p>Cena de LABRADOR, sencillo y SALUDABLE
+                                    Butifarra negra ecológica de Centelles, huevos de nuestro
+                                    corral y verduras del huerto.</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
