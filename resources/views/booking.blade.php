@@ -23,9 +23,6 @@
 	</div>
 
 
-
-
-
         <div class="reg agileits w3layouts" id="booking">
             <div class="container">
 
