@@ -71,7 +71,7 @@
                         <li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
                         <li class="agileits w3layouts"><a href="#">Proyecto</a></li>
                         <li class="agileits w3layouts"><a href="#">Comunidad</a></li>
-                        <li class="agileits w3layouts"><a href="#">Contacto</a></li>
+                        <li class="agileits w3layouts"><a href="Contactanos">Contacto</a></li>
                         <li class="agileits w3layouts"><a href="{{ url('/home') }}">Administrador</a></li>
 
                     </ul>
