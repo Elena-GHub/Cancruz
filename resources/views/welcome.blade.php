@@ -76,7 +76,7 @@
 				<h4>Recuperación de la Masía</h4>
 				<div class="h4-underline agileits w3layouts wow slideInLeft"></div>
 				<p>El proyecto de recuperación de la Masía de Can Planes y su entorno se ha hecho con el antiguo principio de la masía, es decir, con la autogestión de los recursos propios y de los alrededores.</p>
-				<a class="agileits w3layoutswow slideInLeft" href="#">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+				<a class="agileits w3layoutswow slideInLeft" href="{{route('project')}}">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
 			</div>
 
 		</div>

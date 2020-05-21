@@ -25,9 +25,15 @@ class PageController extends Controller
     {
         return view('cuisine');
     }
-    
+
     public function dashboard()
     {
         return view('dashboard');
     }
+
+    public function project()
+    {
+        return view('project');
+    }
+
 }
