@@ -33,9 +33,9 @@ Route::get('rooms', 'PageController@rooms')->name('rooms');
 
 Route::get('cuisine', 'PageController@cuisine')->name('cuisine');
 
+Route::get('project', 'PageController@project')->name('project');
+
 Route::resource('/admin/dashboard', 'PageController');
-
-
 
 Route::post('Contactanos',['uses' => 'ContactanosController@store', 'as'=> 'Contactanos.store']);
 

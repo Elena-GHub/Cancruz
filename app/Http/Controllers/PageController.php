@@ -31,4 +31,9 @@ class PageController extends Controller
         return view('dashboard');
     }
 
+    public function project()
+    {
+        return view('project');
+    }
+
 }
