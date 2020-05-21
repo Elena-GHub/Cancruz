@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Client;
+use App\Room;
 
 class PageController extends Controller
 {
     public function booking()
     {
-        return view('booking');
+        $clients = Client::all();
+        $rooms = Room::all();
+        return view('booking', compact('clients', 'rooms'));
     }
 
     public function gallery()

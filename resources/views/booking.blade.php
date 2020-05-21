@@ -70,11 +70,11 @@
                         <div class="suite wow slideInLeft agileits w3layouts">
                             <div class="dropdown-button agileits w3layouts">
                                 <h4>Habitaciones</h4>
-                                <select onchange="mostrarSugerencia(this.value)" class="dropdown agileits w3layouts" name="room_id" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
-                                    <option value="none">Elige</option>
-                                    <option value="Suite PUIGRACIÓS">Suite PUIGRACIÓS</option>
-                                    <option value="Suite SANT CRISTÒFOL">Suite SANT CRISTÒFOL</option>
-                                    <option value="Suite ROCACENTELLA">Suite ROCACENTELLA</option>
+                                <select name="room_id" class="form-control" />
+                                    <optgroup label="Seleccione una habitación">
+                                        @foreach ($rooms as $room)
+                                        <option value="{{ $room['id'] }}">{{ $room['room_name'] }}</option>
+                                        @endforeach
                                 </select>
                             </div>
                         </div>
@@ -101,14 +101,6 @@
                                 <div>
                                     <input id="breakfast" class="w3-radio" type="checkbox" name="breakfast" value="1">
                                     <label class="w3-validate">Desayuno</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prices  agileits w3layoutsslideInLeft">
-                            <div class="prices agileits w3layouts">
-                                <h4>Precio Total</h4>
-                                <div>
-                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="total_price" >
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
 @section('content')
 
 		<div class="banner agileits w3layouts">
-			<img src="images/banner.jpg" alt="Agileits W3layouts">
+			<img src="images/banner.jpg" alt="">
 			<h1 class="wow agileits w3layouts fadeInDown">Habitaciones</h1>
 		</div>
 
