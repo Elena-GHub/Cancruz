@@ -35,6 +35,8 @@ Route::get('cuisine', 'PageController@cuisine')->name('cuisine');
 
 Route::get('project', 'PageController@project')->name('project');
 
+Route::get('about', 'PageController@about')->name('about');
+
 Route::resource('/admin/dashboard', 'PageController');
 
 Route::post('Contactanos',['uses' => 'ContactanosController@store', 'as'=> 'Contactanos.store']);

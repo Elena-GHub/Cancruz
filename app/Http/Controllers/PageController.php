@@ -36,4 +36,9 @@ class PageController extends Controller
         return view('project');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
 }
