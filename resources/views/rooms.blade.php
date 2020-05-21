@@ -2,188 +2,69 @@
 
 @section('content')
 
-		<!-- Banner -->
 		<div class="banner agileits w3layouts">
 			<img src="images/banner.jpg" alt="Agileits W3layouts">
 			<h1 class="wow agileits w3layouts fadeInDown">Habitaciones</h1>
 		</div>
-		<!-- //Banner -->
 
 	</div>
-	<!-- //Header -->
 
+        <div class="location agileits w3layouts">
+            <div class="container">
 
+                <div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-1 wow slideInLeft">
+                    <h3>Las Estancias</h3>
+                    <p>La masía de Can Planes fue registrada como foco ya en el siglo XIV. Una gran nave principal plantada sobre la propia piedra en la planta baja, con el suelo nivelado con losas del propio sitio. Una planta superior con suelos de madera. Paredes de 4 a 5 palmos que guardan la calidez en invierno y el frescor en verano.</p>
+                </div>
 
-	<!-- Rooms -->
+            </div>
+        </div>
+
 	<div class="rooms agileits w3layouts">
 		<div class="container">
 
-			<h2>We Provide The Best Hospitality</h2>
+			<h2>DÚPLEX DEL ROCACENTELLA</h2>
 
 			<div class="rooms-grids agileits w3layouts">
 				<div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
-					<img src="images/habitaciones/(DÚPLEX)  DEL ROCACENTELLA/rocacentella-2.jpg" alt="Agileits W3layouts">
-					<h3>STAR HOTELS</h3>
+					<img src="images/habitaciones/(DÚPLEX)  DEL ROCACENTELLA/rocacentella-2.jpg" alt="Cama">
 				</div>
 				<div class="rooms-grid rooms-grid-2 agileits w3layouts wow fadeInLeft">
-					<img src="images/room-2.jpg" alt="Agileits W3layouts">
-					<h3>BEACH RESORTS</h3>
-				</div>
-				<div class="rooms-grid rooms-grid-3 wow fadeInRight agileits w3layouts">
-					<img src="images/room-3.jpg" alt="Agileits W3layouts">
-					<h3>BEACH HOUSES</h3>
-				</div>
-				<div class="rooms-grid rooms-grid-4 wow agileits w3layouts fadeInLeft">
-					<img src="images/room-4.jpg" alt="Agileits W3layouts">
-					<h3>WATER HOUSES</h3>
+					<img src="images/habitaciones/(DÚPLEX)  DEL ROCACENTELLA/rocacentella-sala.jpg" alt="Foto de sala">
 				</div>
 			</div>
+
+            <div>
+                <h2></h2>
+            </div>
+
+            <h2>PUIGRACIOS</h2>
+
+            <div class="rooms-grids agileits w3layouts">
+                <div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
+                    <img src="images/habitaciones/PUIGRACIÓS/img_4284_lowres.jpg" alt="foto de cama">
+                </div>
+                <div class="rooms-grid rooms-grid-2 agileits w3layouts wow fadeInLeft">
+                    <img src="images/habitaciones/PUIGRACIÓS/img_4306_lowres.jpg" alt="Foto de baño">
+                </div>
+            </div>
+
+            <div>
+                <h2></h2>
+            </div>
+
+            <h2>SAN CRISTOFOL</h2>
+
+            <div class="rooms-grids agileits w3layouts">
+                <div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
+                    <img src="images/habitaciones/El Safreig.jpg" alt="foto de baño">
+                </div>
+                <div class="rooms-grid rooms-grid-2 agileits w3layouts wow fadeInLeft">
+                    <img src="images/habitaciones/PUIGRACIÓS/img_4253_lowres.jpg" alt="Foto de ventana">
+                </div>
+            </div>
 
 		</div>
 	</div>
-	<!-- Rooms -->
 
-
-
-	<!-- Portfolio -->
-	<div class="portfolio agileits w3layouts">
-
-		<div class="ga-top agileits w3layouts">
-
-			<div class="col-md-3 col-sm-3 agileits w3layouts portfolio-top">
-
-				<div class="portfolio-item agileits w3layouts wow zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-1.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-1.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-2.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-2.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-
-			<div class="col-md-3 col-sm-3 agileits w3layouts portfolio-top">
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-3.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-3.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item agileits w3layouts wow zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-4.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-4.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-5.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-5.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-
-			<div class="col-md-3 col-sm-3 agileits w3layouts portfolio-top">
-
-				<div class="portfolio-item agileits w3layouts wow zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-6.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-6.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item agileits w3layouts wow zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-7.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-7.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-
-			<div class="col-md-3 col-sm-3 agileits w3layouts portfolio-top">
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-8.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-8.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-9.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-9.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-
-				<div class="portfolio-item wow agileits w3layouts zoomIn">
-					<a class="example-image-link agileits w3layouts" href="images/project-10.jpg" data-lightbox="example-set" data-title="">
-						<div class="grid agileits w3layouts">
-							<figure class="effect-apollo agileits w3layouts">
-								<img src="images/gallery-10.jpg" alt="Agileits W3layouts">
-									<figcaption></figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-
-			<div class="clearfix"></div>
-
-		</div>
-
-	</div>
-	<!-- //Portfolio -->
 @endsection

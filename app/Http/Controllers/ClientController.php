@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use Illuminate\Http\Request;
+use App\Room;
 
 class ClientController extends Controller
 {
@@ -14,7 +15,10 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        $clients = Client::all();
+        $rooms = Room::all();    
+        return view('client.index', compact('clients', 'rooms'));
+
     }
 
     /**
@@ -24,7 +28,9 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        $clients = Client::all();
+        $rooms = Room::all();
+        return view('client.create', compact('clients', 'rooms'));
     }
 
     /**
@@ -35,7 +41,8 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Client::create($request->all());
+        return redirect(route('client.index'));
     }
 
     /**
@@ -46,7 +53,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-        //
+        return view('client.show', ['client' => $client]);
     }
 
     /**
@@ -57,7 +64,9 @@ class ClientController extends Controller
      */
     public function edit(Client $client)
     {
-        //
+        $clients = Client::all();
+        $rooms = Room::all();
+        return view('client.edit', ['client' => $client], compact('rooms'));
     }
 
     /**
@@ -69,7 +78,8 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        //
+        $client->update($request->all());
+        return redirect(route('client.index'));
     }
 
     /**
@@ -80,6 +90,7 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+        return redirect(route('client.index'));
     }
 }
