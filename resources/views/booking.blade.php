@@ -1,4 +1,38 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+
+<title>Masia Can Cruz Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tropical Resorts a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css"	type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" 		type="text/css" media="all">
+<link rel="stylesheet" href="css/animate.css" 		type="text/css" media="all">
+
+
+
+ <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+ <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700" type="text/css">
+ <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css">
+
+
+</head>
+
+
+<body>
+	<div class="flex-center position-ref full-height">
+=======
 @extends('layouts.app')
+>>>>>>> rama_feature
 
 @section('content')
 
@@ -25,17 +59,59 @@
 
 
 
+<<<<<<< HEAD
+@extends('layouts.app')
+
+=======
 
     <div class="reg agileits w3layouts" id="booking">
         <div class="container">
+>>>>>>> rama_feature
 
             <div class="register agileits w3layouts">
                 <form action="{{Route('client.store')}}" method="POST">
 
+<<<<<<< HEAD
+		<div class="banner agileits w3layouts">
+			<img src="images/banner.jpg" alt="Agileits W3layouts">
+			<h1 class="wow agileits w3layouts fadeInDown">Reservas</h1>
+		</div>
+
+	</div>
+
+	<div class="location agileits w3layouts">
+		<div class="container">
+
+			<div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-1 wow slideInLeft">
+				<h3>Donde estamos</h3>
+				<p>Para venir a Can Planes de Bcn, Granollers etc., toma la C17 dirección Vic. <br>C-17 SALIDA GARRIGA NORTE Satis</p>
+			</div>
+
+			<div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-2 wow slideInRight">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.127250641673!2d2.284077914961283!3d41.717772883411854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c5781a8b6bcb%3A0x6dd4d1b5896df742!2sMasia%20Can%20Plans!5e0!3m2!1ses!2ses!4v1589798451303!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+
+
+
+<<<<<<< HEAD
+
+
+	<div class="reg agileits w3layouts" id="booking">
+		<div class="container">
+
+			<div class="register agileits w3layouts">
+
+				<h2>Reserva tu estancia</h2>
+=======
                     @CSRF
 
                     <h2>Reserva tu estancia</h2>
 
+>>>>>>> rama_feature
 
                     <div class="dates wow  agileits w3layoutsslideInLeft">
                         <div class="dates agileits w3layouts">
