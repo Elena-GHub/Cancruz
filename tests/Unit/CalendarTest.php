@@ -12,7 +12,5 @@ class CalendarTest extends TestCase
         $selectDays= new Calendar();
         $result= $selectDays->getEveryDays($month);
         $this->assertEquals(31, $result);
-
     }
-
 }

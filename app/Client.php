@@ -2,6 +2,7 @@
 
 namespace App;
 use App\Room;
+use Carbon\Carbon;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -39,30 +40,6 @@ class Client extends Model
         if ($value === 0)
         {
             return "No";
-        }
-    }
-    
-    public function setBreakfastAttribute($value)
-    {
-        if ($value === 'Sí')
-        {
-            return 1;
-        }
-        if ($value === 'No')
-        {
-            return 0;
-        }
-    }
-    
-    public function setPetAttribute($value)
-    {
-        if ($value === 'Sí')
-        {
-            return 1;
-        }
-        if ($value === 'No')
-        {
-            return 0;
         }
     }
     

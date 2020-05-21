@@ -67,24 +67,48 @@
                                         <option value="{{ $room['id'] }}">{{ $room['room_name'] }}</option>
                                         @endforeach
                                     </select>
-                                <label class="my-secondItem">Comentarios:</label>
-                                <input type="text" name="comments" class="form-control" value="{{$client->comments}}" />
+                                <label class="my-secondItem">Nº de huéspedes:</label>
+                                <input type="text" name="guests" class="form-control" value="{{$client->guests}}" />
                             </div>
                             </div>
                         </div>
-                        <div class="card-body form-group">
-                            <div class="card my-card bg-secondary">
-                                <label>Extras:</label>
-                                <div>
-                                    <input type="checkbox" name="pet" value="{{$client->pet}}" <?php if($client->pet == "Sí") echo "checked"; ?>/>
-                                    <label class="w3-validate">Mascota</label>
-                                    <input type="checkbox" name="breakfast" value="{{$client->breakfast}}" <?php if($client->breakfast == "Sí") echo "checked"; ?>/>
+
+                        <div class="card-columns">
+                            <div class="card-body form-group">
+                                <div class="card my-card bg-secondary">
+                                    <div class="book-pag wow agileits w3layouts slideInLeft">
+                                        <label>Estancia:</label><br>
+                                        <div class="book-pag-frm1 agileits w3layouts wow slideInLeft">
+                                            <label>Fecha de entrada</label>
+                                            <input class="date agileits w3layouts" id="datepicker1" type="date" name="check_in_date"  value="Entrada" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                        </div>
+                                        <div class="book-pag-frm2 wow agileits w3layouts slideInLeft">
+                                            <label>Fecha de salida</label>
+                                            <input class="date agileits w3layouts" id="datepicker2" type="date" name="check_out_date"  value="Salida" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body form-group">
+                                <div class="card my-card bg-secondary">
+                                    <label>Extras:</label><br>
+                                    <input type="hidden" name="pet" value="0" />
+                                    <input type="checkbox" name="pet" value="1" <?php if($client->pet == "Sí") echo "checked"; ?>/>
+                                    <label class="w3-validate">Mascota</label><br>
+                                    <input type="hidden" name="breakfast" value="0" />
+                                    <input type="checkbox" name="breakfast" value="1" <?php if($client->breakfast == "Sí") echo "checked"; ?>/>
                                     <label class="w3-validate">Desayuno</label>
                                 </div>
-                                
                             </div>
-                        </div>                    
-                              
+                            <div class="card-body form-group">
+                                <div class="card my-card bg-secondary">
+                                    <label>Comentarios:</label>
+                                <input type="text" name="comments" class="form-control" value="{{$client->comments}}" />
+                                </div>
+                            </div>
+                        
                     </div>
                     <div class="card-footer">
                         <input type="submit" value="Actualizar" class="btn btn-primary">
