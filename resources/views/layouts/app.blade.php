@@ -63,17 +63,14 @@
 
     <div class="footer agileits w3layouts">
         <div class="container">
-
             <div class="col-md-6 col-sm-6 agileits w3layouts footer-grids">
                 <div class="col-md-4 col-sm-4 footer-grid agileits w3layouts footer-grid-3 wow fadeInUp">
                     <ul class="agileits w3layouts">
                         <li class="agileits w3layouts"><a href="about.html">Nosotros</a></li>
                         <li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
                         <li class="agileits w3layouts"><a href="{{route ('project')}}">Proyecto</a></li>
-                        <li class="agileits w3layouts"><a href="#">Comunidad</a></li>
                         <li class="agileits w3layouts"><a href="Contactanos">Contacto</a></li>
                         <li class="agileits w3layouts"><a href="{{ url('/home') }}">Administrador</a></li>
-
                     </ul>
                 </div>
                 <div class="clearfix"></div>
