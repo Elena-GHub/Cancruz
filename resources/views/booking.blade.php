@@ -7,10 +7,8 @@
         <h1 class="wow agileits w3layouts fadeInDown">Reservas</h1>
     </div>
 
-
     <div class="location agileits w3layouts">
         <div class="container">
-
             <div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-1 wow slideInLeft">
                 <h3>Como llegar</h3>
             </div>
@@ -21,45 +19,42 @@
             </div>
         </div>
     </div>
+
     <div class="reg agileits w3layouts" id="booking">
         <div class="container">
-
             <div class="register agileits w3layouts">
                 <form action="{{Route('client.store')}}" method="POST">
 
                     @CSRF
+                        <h2>Reserva tu estancia</h2>
 
-                    <h2>Reserva tu estancia</h2>
+                        <div class="dates wow  agileits w3layoutsslideInLeft">
+                            <div class="dates agileits w3layouts">
+                                <h4>Nombre</h4>
+                                <div>
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="first_name" required="">
+                                </div>
+                                <h4>Apellidos</h4>
+                                <div>
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="last_name"  required="">
+                                </div>
+                                <h4>Email</h4>
+                                <div>
+                                    <input type="email" class="form-control agileits w3layouts slideInLeft" name="email"  required="">
+                                </div>
+                                </div>
+                                <h4>Móvil</h4>
+                                <div>
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="phone_number"  required="">
+                                </div>
+                                <h4>Comentario</h4>
+                                <div>
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="comments"   required="">
+                                </div>
+                            </div>
 
-
-                    <div class="dates wow  agileits w3layoutsslideInLeft">
-                        <div class="dates agileits w3layouts">
-                            <h4>Nombre</h4>
-                            <div>
-                                <input type="text" class="form-control agileits w3layouts slideInLeft" name="first_name" required="">
-                            </div>
-                            <h4>Apellidos</h4>
-                            <div>
-                                <input type="text" class="form-control agileits w3layouts slideInLeft" name="last_name"  required="">
-                            </div>
-                            <h4>Email</h4>
-                            <div>
-                                <input type="email" class="form-control agileits w3layouts slideInLeft" name="email"  required="">
-                            </div>
-                            </div>
-                            <h4>Móvil</h4>
-                            <div>
-                                <input type="text" class="form-control agileits w3layouts slideInLeft" name="phone_number"  required="">
-                            </div>
-                            <h4>Comentario</h4>
-                            <div>
-                                <input type="text" class="form-control agileits w3layouts slideInLeft" name="comments"   required="">
-                            </div>
-                        </div>
-                    </div>
-
-                        <div class="members wow agileits w3layouts slideInLeft">
-                            <div class="guests agileits w3layouts">
+                        <div class="dates wow  agileits w3layoutsslideInLeft">
+                            <div class="dates agileits w3layouts">
                                 <h4>Huéspedes</h4>
                                 <div class="dropdown-button agileits w3layouts">
                                     <select class="dropdown agileits w3layouts" id="guests" name="guests" tabindex="10" data-settings='{"wrapperClass":"flat"}'>
@@ -69,8 +64,6 @@
                                         <option value="4">4</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="clearfix">
                             </div>
                         </div>
 
@@ -98,41 +91,33 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-
-
-            <div class="food wow agileits w3layouts slideInLeft">
-                <h4>Extras</h4>
-                <div class="radio-btns agileits w3layouts">
-                    <div>
-                        <input id="pet" class="w3-radio" type="checkbox" name="pet" value="1">
-                        <label class="w3-validate">Mascota</label>
-                    </div>
-                    <div>
-                        <input id="breakfast" class="w3-radio" type="checkbox" name="breakfast" value="1">
-                        <label class="w3-validate">Desayuno</label>
-                    </div>
-                </div>
+                        <div class="food wow agileits w3layouts slideInLeft">
+                            <h4>Extras</h4>
+                            <div class="radio-btns agileits w3layouts">
+                                <div>
+                                    <input id="pet" class="w3-radio" type="checkbox" name="pet" value="1">
+                                    <label class="w3-validate">Mascota</label>
+                                </div>
+                                <div>
+                                    <input id="breakfast" class="w3-radio" type="checkbox" name="breakfast" value="1">
+                                    <label class="w3-validate">Desayuno</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices  agileits w3layoutsslideInLeft">
+                            <div class="prices agileits w3layouts">
+                                <h4>Precio Total</h4>
+                                <div>
+                                    <input type="text" class="form-control agileits w3layouts slideInLeft" name="total_price" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit wow agileits w3layouts slideInLeft">
+                            <input type="submit" value= "Reservar" class="btn btn-primary agileits w3layouts wow fadeInLeft" data-toggle="modal" data-target="#myModal3">
+                        </div>
+                </form>
             </div>
-            <div class="prices  agileits w3layoutsslideInLeft">
-                <div class="prices agileits w3layouts">
-                    <h4>Precio Total</h4>
-                    <div>
-
-                        <input type="text" class="form-control agileits w3layouts slideInLeft" name="total_price" >
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="submit wow agileits w3layouts slideInLeft">
-            <!--<a class="popup-with-zoom-anim agileits w3layouts" href="{{ url('/') }}">Reservar ahora</a>-->
-                <input type="submit" value="Reservar" class="popup-with-zoom-anim agileits w3layouts">
-            </div>
-
-            </form>
         </div>
-
-    </div>
     </div>
 
 @endsection
