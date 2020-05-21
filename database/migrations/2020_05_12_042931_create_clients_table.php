@@ -24,12 +24,11 @@ class CreateClientsTable extends Migration
             $table->integer('guests')->default(1);
             $table->foreignId('room_id')->default(1);
             $table->foreign('room_id')->references('id')->on('rooms');
-            $table->boolean('pet')->default(false);
+            $table->integer('pet')->default(0);
             $table->boolean('breakfast')->default(false);
-            $table->integer('price')->default(85);
             $table->integer('total_price')->nullable();
-            $table->date('check_in_date')->default(Carbon::today());
-            $table->date('check_out_date')->default(Carbon::tomorrow());
+            $table->date('check_in_date');
+            $table->date('check_out_date');
             $table->timestamps();
         });
     }
