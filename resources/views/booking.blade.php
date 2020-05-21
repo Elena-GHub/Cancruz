@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -60,10 +59,8 @@
 		</nav>
 
 
-
-=======
 @extends('layouts.app')
->>>>>>> origin/rama_feature
+
 
 @section('content')
 
@@ -71,19 +68,9 @@
 			<img src="images/banner.jpg" alt="Agileits W3layouts">
 			<h1 class="wow agileits w3layouts fadeInDown">Reservas</h1>
 		</div>
-<<<<<<< HEAD
-
 
 	</div>
 
-
-
-
-
-=======
-
-
->>>>>>> origin/rama_feature
 	<div class="location agileits w3layouts">
 		<div class="container">
 
