@@ -70,13 +70,10 @@
                         <li class="agileits w3layouts"><a href="about.html">Nosotros</a></li>
                         <li class="agileits w3layouts"><a href="{{route ('cuisine')}}">Cocina Ecologica</a></li>
                         <li class="agileits w3layouts"><a href="#">Proyecto</a></li>
-<<<<<<< HEAD
                         <li class="agileits w3layouts"><a href="#">Comunidad</a></li>
                         <li class="agileits w3layouts"><a href="Contactanos">Contacto</a></li>
-=======
                         <li class="agileits w3layouts"><a href="#">Gente Comprometida</a></li>
                         <li class="agileits w3layouts"><a href="#">Contacto</a></li>
->>>>>>> 9df148ba2832c6d9fa788bdeb3811fb4825e6dce
                         <li class="agileits w3layouts"><a href="{{ url('/home') }}">Administrador</a></li>
 
                     </ul>
