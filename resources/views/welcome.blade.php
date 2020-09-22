@@ -1,100 +1,126 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+		<div class="slider agileits w3layouts">
+			<div class="slider-1 agileits w3layouts">
+				<ul class="rslides agileits w3layouts" id="slider1">
+				<li>
+					<img src="images/masia_portada.jpg" alt="Agileits W3layouts">
+					<div class="layer agileits w3layouts"></div>
+					<div class="caption agileits w3layouts">
+						<h3>Bienvenido a <span>Masia Can Cruz</span></h3>
+					</div>
+				</li>
+				<li>
+					<img src="images/masia_portada2.jpg" alt="Foto masia">
+					<div class="caption agileits w3layouts">
+						<h3>Alojamiento rural</h3>
+					</div>
+				</li>
+				<li>
+					<img src="images/masia_portada3.jpg" alt="Foto parque Montseny">
+					<div class="caption agileits w3layouts">
+						<h3>Parque Natural Montseny</h3>
+					</div>
+				</li>
+				<li>
+					<img src="images/masia_portada4.jpg" alt="Foto masia">
+					<div class="caption agileits w3layouts">
+						<h3>En plena naturaleza</h3>
+					</div>
+				</li>
+				<li>
+					<img src="images/masia_portada5.jpg" alt="Agileits W3layouts">
+					<div class="layer agileits w3layouts"></div>
+					<div class="caption agileits w3layouts">
+						<h3>Una experiencia única</h3>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+		<div class="clearfix"></div>
 
-            .full-height {
-                height: 100vh;
-            }
+	</div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+	<div class="projects agileits w3layouts">
+		<div class="container">
 
-            .position-ref {
-                position: relative;
-            }
+			<div class="col-md-8 col-sm-8 projects-grid agileits w3layouts projects-grid1 wow slideInLeft">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+				<div class="slider-2 agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider2">
+						<li>
+							<img src="images/inicio/masia_portada5.jpg" alt="Foto de masia">
+						</li>
+					</ul>
+				</div>
 
-            .content {
-                text-align: center;
-            }
+				<div class="slider-3 agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider3">
+						<li>
+							<img src="images/inicio/cocina.jpg" alt="Foto cocina">
+						</li>
+						<li>
+							<img src="images/inicio/ventana.jpg" alt="Foto ventana">
+						</li>
+					</ul>
+				</div>
 
-            .title {
-                font-size: 84px;
-            }
+			</div>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+			<div class="col-md-4 col-sm-4 projects-grid agileits w3layouts projects-grid2 wow slideInRight">
+				<h1>Proyecto y Reconstruccion</h1>
+				<h4>Recuperación de la Masía</h4>
+				<div class="h4-underline agileits w3layouts wow slideInLeft"></div>
+				<p>El proyecto de recuperación de la Masía de Can Planes y su entorno se ha hecho con el antiguo principio de la masía, es decir, con la autogestión de los recursos propios y de los alrededores.</p>
+				<a class="agileits w3layoutswow slideInLeft" href="{{route('project')}}">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+			</div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+		</div>
+	</div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+	<div class="projects agileits w3layouts">
+		<div class="container">
+			<div class="col-md-4 col-sm-4 projects-grid agileits w3layouts projects-grid2 wow slideInRight">
+				<h1>Alimentos</h1>
+				<h4>Cocina Ecologica</h4>
+				<div class="h4-underline agileits w3layouts wow slideInLeft"></div>
+				<p>Elaboramos las comidas con recetas sencillas y saludables......</p>
+				<a class="agileits w3layoutswow slideInLeft" href="{{route ('cuisine')}}">Leer mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+			</div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+			<div class="col-md-8 col-sm-8 projects-grid agileits w3layouts projects-grid1 wow slideInLeft">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+				<div class="slider-2 agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider2">
+						<li>
+							<img src="images/cocina/huerto.jpg" alt="Foto cosecha">
+						</li>
+						<li>
+							<img src="images/cocina/huerto_arado.jpg" alt="Foto huerto arado">
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="slider-3 agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider3">
+						<li>
+							<img src="images/cocina/vino_en_la_mesa.jpg" alt="Foto vino sobre mesa">
+						</li>
+						<li>
+							<img src="images/cocina/tomates_y_cebollas_huerto.jpg" alt="Foto cebollas y tomates">
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+@endsection

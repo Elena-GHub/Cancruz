@@ -6,11 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    protected $protected = ['id'];
+protected $fillable = ['room_name', 'room_price', 'breakfast_price', 'pet_price'];
     
-    /* public function Codersgroup()
+    public function User()
     {
-         return $this->belongsTo(Codersgroup::class);
+        return $this->belongsToMany(User::class)->withTimestamps();
     }
-    */
 }

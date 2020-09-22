@@ -22,6 +22,23 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('room', 'RoomController');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('client', 'ClientController');
+
+Route::get('booking', 'PageController@booking')->name('booking');
+
+Route::get('gallery', 'PageController@gallery')->name('gallery');
+
+Route::get('rooms', 'PageController@rooms')->name('rooms');
+
+Route::get('cuisine', 'PageController@cuisine')->name('cuisine');
+
+Route::get('project', 'PageController@project')->name('project');
+
+Route::get('about', 'PageController@about')->name('about');
+
+Route::resource('/admin/dashboard', 'PageController');
+
+Route::post('Contactanos',['uses' => 'ContactanosController@store', 'as'=> 'Contactanos.store']);
+
+Route::resource('Contactanos', 'ContactanosController');

@@ -1,23 +1,28 @@
-@extends('layouts.app')
+@extends('admin.adminnav')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+    <div>
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>¡Ha iniciado sesión correctamente!</strong>
                         </div>
-                    @endif
+                        <div class="card-header">
+                            <h2>Panel de administración</h2>
+                        </div>
 
-                    You are logged in!
+                        <div class="card-body">
+                            <a href="{{Route('client.index')}}" class="btn btn-primary">Administrar reservas</a>
+                            <a href="{{Route('room.index')}}" class="btn btn-primary">Administrar habitaciones</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+    @endsection
